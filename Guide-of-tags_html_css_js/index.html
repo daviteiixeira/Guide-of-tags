@@ -1,0 +1,272 @@
+<!--The name "index.html" always deve ser the name of principal past HTML-->
+
+<!--Is tag (DOCTYPE) serves for descrever for browser qual type of language estamos using-->
+<!DOCTYPE html5>
+<!--The tag "HTML" is an tag raiz, ou seja, é ela que começa com tudo-->
+<!--The attribute "lang" serve for definir um idioma em algo, no caso de estar dentro
+da tag html, ela define o idioma da página inteira-->
+<html lang="pt br">
+    <!--The tag "head" is an tag mommy, ou seja, she is an tag que precisa da tag html and
+    como o próprio name of tag head diz, she is the head of página web, is nela que as coisas
+    que o usuario não vê será inserido, como por exemplo; inserir o css da página-->
+    <head>
+        <!--Is tag "meta" serves são responsáveis por informar sobre dados como uma descrição do
+        conteúdo da página, seu autor, data de criação, entre outras informações-->
+        <!--Já the attribute "chasert" serves for informar ao browser o formato de codificação dos
+        caracteres, ASCII, UTF-8, ANSI e ISO-8859-1 são exemplos de charsets-->
+        <meta chasert="UTF-8">
+        <!--Is tag "meta" serves são responsáveis por informar sobre dados como uma descrição do
+        conteúdo da página, seu autor, data de criação, entre outras informações-->
+        <!--The attribute "http-equiv" tem always an relação com outro attribute, chamado: "content", pois
+        serves for criar an header for este atributo, ou seja, it dá valor for as informações/valores do atributo content-->
+        <!--The value "X-UA-Compatible" serves for te browser not trabalhar como Quirks Mode que é o modo em que o site acaba sendo
+        interpretado na versão mais antiga do IE (Internet Explorer), pois este navegador não suporta a versão mais recente
+        do HTML, que é o HTML5-->
+        <!--The attribute "content" serves for dependendo do contexto que é colocada, como por exemplo: se fosse colocada
+        no CSS, mas como está aqui no HTML, she serves for exibir a value-->
+        <!--The value "IE=edge" significa que é pro navegador renderizar aquela página para sua versão mais recente-->
+        <!--Este conjunto de atributos na tag meta, é exclusiva pro browser internet explorer e serve para dizer para este browser
+        o seguinte "configure a página para ser renderizada como em outra versão do Internet Explorer"-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--Is tag "meta" serves são responsáveis por informar sobre dados como uma descrição do
+        conteúdo da página, seu autor, data de criação, entre outras informações-->
+        <!--The attribute "name" serves for identify the value of an variable-->
+        <!--The value "viewport" serves for definir o tamanho que tu como usuário vai ver o site, por exemplo: você vai ver de um jeito
+        usando notebook e de outro usando celular-->
+        <!--The attribute "content" serves for dependendo do contexto que é colocada, como por exemplo: se fosse colocada
+        no CSS, mas como está aqui no HTML, she serves for exibir a value-->
+        <!--The value "width=device-width, initial-scale=1.0" serves for avisar que o conteúdo do viewport tem que ser proporcional ao
+        disponitivo usado, ou seja, se você usa um celular com porpoções de 320px (320 pixels) seu viewport vai ser 320px também-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--The tag "link" serves for warn than a element/content vai ter direcionamento/hiperligação/relação/ligação com outra página-->
+        <!--The attribute "id" serves for the element/content receive a name, or value for be more exact, used for get use the language CSS-->
+        <!--The value of id, is the name than quiser usar mas é importante que seja um nome que faça sentido-->
+         <!--The attribute "rel" serves for warn what tem an relacion the element/content atual com o elemento/conteúdo da outra página-->
+        <!--The value "shortcut icon" significa que é um icone pequeno-->
+        <!--The attribute "type" serves for definir uma propriedade pro elemento/conteúdo, neste caso por exemplo tenha a vê
+        com uma image e/ou icone-->
+        <!--The value "image/x-icon" já foi explicado na explicação anterior-->
+        <!--The attribute "href" serves for informar aonde o browser pode pegar o tal elemento ou conteúdo que queremos inserir, muito
+        parecido com outro atributo que veremos mais pra frente-->
+        <!--The value of href, existem 2 formas de colocar um valor nele, que pode ser um elemento ou conteúdo que já temos em nosso projeto
+        como no caso, ou pegar a URL de uma imagemm no google imagens por exemplo-->
+        <!--O conjunto desses atributos com esta tag cria um favicon para o site-->
+        <link id="Favicon" rel="shortcut icon" type="image/x-icon" href="Favicon/icons8-book-96.png">
+        <!--The tag "link" serves for warn than a element/content vai ter direcionamento/hiperligação/relação/ligação com outra página-->
+        <!--The attribute "rel" serves for warn what tem an relacion the element/content atual com o elemento/conteúdo da outra página-->
+        <!--The value "stylesheet" than want say CSS or in português folha de estilo-->  
+        <!--The attribute "href" serves for informar aonde o browser pode pegar o tal elemento ou conteúdo que queremos inserir, muito
+        parecido com outro atributo que veremos mais pra frente-->
+        <!--The value of href, existem 2 formas de colocar um valor nele, que pode ser um elemento ou conteúdo que já temos em nosso projeto
+        como no caso, ou pegar a URL de uma imagemm no google imagens por exemplo-->
+        <!--O conjunto desees atributos com esta tag insere a linguaem de CSS no site-->
+        <link rel="stylesheet" href="Style/style.css">
+        <!--The tag "script" is an tag exclusive for the Javascript and want say than vamos inserir um Javascript em tal elemento, como neste caso
+        estamos inserindo ele na tag head, vamos inserir em toda página-->
+        <!--The attribute "rel" serves for warn what tem an relacion the element/content atual com o elemento/conteúdo da outra página-->
+        <!--The value of rel is este porque "text/javascript" quer dizer que a relação entre o elemento (que é a página inteira)
+        é javascript-->
+        <!--The attribute "src" is muito parecido com outra tag chamada "href" e ambas fazem a mesma função de dizer de onde que o elemento/conteúdo
+        que queremos inserir está, com uma pequena diferença que é o processanamento, ou seja, enquanto o atributo src ele processsa o conteúdo
+        que você fro botar como por exemplo>: imagem, video, entre outros. O atributo href não, ele apenas bota na página-->
+        <script rel="text/javascript" src="Script/Javascript.js"></script>
+        <!--The tag "title" somente usada na tag head no HTML, she serves for criar um nome para sua guia no navegador-->
+        <title>Guia de Tags</title>
+    </head>
+    <!--The tag "body" serves como um pai para as outras, ela e a tag head estão na mesma classe social das tags. Esta tag vai ter tudo o que o usuário
+    pode ver e interagir na página-->
+    <body> 
+        <!--The tag "div" serve para juntar vários elementos em um só, usada para mudar o estilo do elemento ou do conteúdo com CSS-->
+        <!--O atributo "class" é muito parecido com utro atributo, chamado id, pois ambas servem para colocar um nome ou valor para algum
+        elemento/conteúdo da página, portanto suas diferenças são nítidas: Enquanto o atributo class você pode ser reutilizado, já id não-->
+        <div class="contrainer"></div>
+        <!--The tag "p" serves for create a paragraph-->
+        <!--The attribute "id" serves for dar a name altenativo de seu nome de tag, serve principalemente para modificar o elemento
+        atráves do CSS ou Javascript...-->
+        <p id="Paragraph"></p>
+        <!--The tag "h" serves for create a tittle for the site, the number ao lado do H serve para escolher o tamanho que vai de 1-9-->
+        <h1></h1>
+        <!--The tag "br" create a quebra linha-->
+        <br>
+        <!--The tag "input" serves for criar um tipo de barra for um usuario colocar algo, como nome de usuario, senha e outros dados-->
+        <!--The atribute "type" serves for mostrar ao navegador que tipo de coisa o usuario vai escrever-->
+        <!--The atribute "placeholder" serves for criar uma mensagem na barra, para o usuario saber o que escrever-->
+        <!--Este conjunto de atributos com a tag input é usada em formulários ou para coletar dados de usuários-->
+        <input type="text" placeholder="Email">
+        <!--The atribute "type" junto com o valor "password" oculta o que o usuario colocar-->
+        <input type="password" placeholder="Password">
+        
+        <!--Exemplo do que foi citado até aqui:-->
+        <div class="Grupo">ç
+            <h1>Formulário</h1>
+            <p>Seu email:</p>
+            <input type="text" placeholder="Email">
+            <p>Sua senha:</p>
+            <input type="password" placeholder="Password">
+            <p>Mude está barra que podia ser o volume de um audio:</p>
+            <input type="range">
+            <p>Caixinha de marca:</p>
+            <input type="checkbox">
+            <p>Marque uma data do ano:</p>
+            <input type="date">
+            <p>Escolha uma cor:</p>
+            <input type="color">
+            </div>
+
+        <!--The tag "table" was done for create a table, is she than go get all-->
+        <table></table>
+        <!--The tag "thead" is a tag exclusive for the tag table, she serves for create a tittle for your table, muito útil se você tiver que
+        por exemplo: "Em uma tabela você tem dois valores, 10 e 20, e quer falar que 10 significa a quantidade de horas e 20 a quantidade de dias"
+        usando a tag thead você apenas precisa criar uma linha que tenha uma coluna para as horas e outra coluna para os dias (mais pra frente
+        vai explicar como criar linhas e colunas em tabelas)-->
+        <thead></thead>
+        <!--The tag "tbody" was done for create a body for your table, very used in creates of tables, sua inportância é imensa, pois é nela que
+        você vai botar o seu conteúdo e botar as principais linhas e colunas, como por exemplo: (usando o exemplo da tag thead) "Eu quero colocar
+        a quantidade de dias em 2anos e de horas de segunda-domingo também" é nessa tag tbody que você vai botar-->
+        <tbody></tbody>
+        <!--The tag "tfoot" was done for create uma linha que quebre as regras das outras, serve para por exemplo: (usando o exemplo das tags thead
+        e tbody) "Eu quero colocar o resultado da soma de horas e dias que foram usados nesses 2anos" é nessa tag tfoot que você vai colocar, mas nada
+        de empete de colocar na tag tbody também-->
+        <tfoot></tfoot>
+        <!--The tag "tr" serves for create a line in your table-->
+        <tr></tr>
+        <!--The tag "th" serves for create a column in your table, but só pode ser used in tag thead, ou seja, she is a
+        tag exclusive for the tag thead-->
+        <th></th>
+        <!--The tag "td" was done for create a column in your table and always she go precisar of tag tr, because all column precisa of a
+        line-->
+        <td></td>
+
+        <!--Exemplo do que foi citado até agora:-->
+        <h1>TABELA HTML</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Horas</th>
+                    <th>Anos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5 horas/3 dias</td>
+                    <td>1 ano/365 days</td>
+                    <td>2 hours/3 days</td>
+                    <td>2 years/730 dias</td>
+                </tr>
+                <tr>
+                    <td>12 hours/2 days</td>
+                    <td>8 years/2920 dias</td>
+                    <td>22 horas/5 days</td>
+                    <td>4 years/1460 days</td>
+                </tr>
+                <tr>
+                    <td>89 horas/90 dias</td>
+                    <td>2 years/730 dias</td>
+                    <td>26 hours/30 days</td>
+                    <td>9 years/3285 dias</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td>Soma de tudo: 156 horas/133 dias - 26 anos/9490 dias</td>
+                    </tr>
+                </tfoot>
+            </tbody>
+        </table>
+
+        <!--This tag "figure" serves for insert a image in your page-->
+        <!--The tag figure need of other tag, your name is "img"-->
+        <figure></figure>
+        <!--This tag "img" serves for insert a image, mas sua diferença da tag figure é que a tag figure tem outra tag chamada figcaption
+        que serve para dar uma legenda a uma imagem, enquanto a tag img não tem isso-->
+        <!--The attribute "src" serves for dizer ao navegador aonde ele teve pegar a imagem, ou sjea, a URL-->
+        <!--Te attribute "title" serves for create a legenda para sua imagem, igual a tag figcaption mas é algo que não é mais usado por ser
+        coisa de versões antigas do HTML-->
+        <!--The attribute "alt" was done for quando a imagem por algum motivo não aparecer, the browser mostrar um texto-->
+        <img src="" title="" alt="">
+        <!--The tag "figcaption" was done for she insert an caption  in your image-->
+        <figcaption></figcaption>
+
+        <!--Exemplo do que foi citado de novo até aqui:-->
+        <figure>
+            <img src="/Guide-of-tags/images/leon.jpeg" alt="Failed to load the image"/>
+            <figcaption>Leon looking the landscape</figcaption>
+        </figure>
+
+        <!--The tag "pre" was done for a text ficar na forma que tu escrever ele, mais adiante tem um exemplo na prática-->
+        <pre></pre>
+        <!--The tag "em" was done for let a stretch of a text ficar de ladinho para dar destaque-->
+        <em></em>
+        <!--"Strong" means than a stretch of a text will be in negrito (ou boldface em inglês)-->
+        <strong></strong>
+        <!--The "sub" means than a stretch of a text will be in subescrito (ou subscript em inglês)-->
+        <sub></sub>
+        <!--"sup" serves for leave a streth of a text in sobrecrito (ou superscript em inglês)-->
+        <sup></sup>
+        <!--"hr" serves for create a linha reta horizontal em toda a página web-->
+        <hr>
+        <!--The "i" was done for leave italic (itálico em pt-br) a stretch of a text-->
+        <i></i>
+        <!--The tag "b" serves for leave a stretch of a text boldface (negrito), igual a tag strong, suas diferenças é que a tag b
+        não avisa o navegadpr que aquele trecho é importante-->
+        <b></b>
+        <!--A tag "del" risca a frase/trecho ao meio, simbolizando que aquele trecho está nulo-->
+        <del></del>
+        <!--The tag "u" was done for sublinhar (ou underline em inglês) a stretch of a text-->
+        <u></u>
+
+        <!--A example of usege do que foi citado até aqui-->
+        <hr>
+        <pre>
+            <em>This is a text</em>
+                <strong>of example of</strong>
+                   <sub>tag pre</sub>
+                   <sup>está tag é muito divertida de brincar</sup>
+                       e
+            <i>observe que o texto</i>
+               <del>na pagina web</del>
+                   <u>ficará exatamente assim</u>
+        </pre>
+        <hr>
+
+        <!--"ol" means than the browser will create an list with an order-->
+        <ol></ol>
+        <!--"ul" is to opposite of tag ol, that is, she (the ul) create an list without an order-->
+        <ul></ul>
+        <!--The tag "li" serves for insert a item in your list, seja she without an order or she with an order-->
+        <li></li>
+
+        <!--Example of than was ensinado até agora (serão duas listas)-->
+        <ol>
+            <li>Item a</li>
+            <li>Item b</li>
+            <li>Item c</li>
+        </ol>
+        <ul>
+            <li>Item a</li>
+            <li>Item b</li>
+            <li>Item c</li>
+        </ul>
+        
+        <!--"audio" how the name, mesmo say serves for insert a audio in your site web-->
+        <!--The attribute "controls" serves for leave the song with controls, for example: To give an pause in audio-->
+        <!--The attribute "autoplay" was done for the audio ficar tocando automaticamente-->
+        <audio controls autoplay></audio>
+        <!--The tag "source" permite que você especifique vídeo/áudio/imagem alternativos arquivos que o navegador pode escolher-->
+        <!--The attribute "src" is equal the attribute url-->
+        <!--The attribute "type" serves for to say to browser qual the type of arquivo estamos lidando-->
+        <source src="" type="">
+        <!--The tag "video" was done for to insert a vídeo in your page web-->
+        <video></video>
+
+        <!--Example do que foi citado até agora(será um exemplo para audio e pra video):-->
+        <video controls autoplay>
+            <!--São dois "source" pois caso a página web não identificar um, ele identifica outro-->
+            <source src="/Guide-of-tags/vídeo/production ID_4919748.mp4" type="video/mp4">
+            <source src="/Guide-of-tags/vídeo/production ID_4919748.ogg" type="video/ogg">
+        </video>
+        <audio controls autoplay>
+            <source src="/Guide-of-tags/audio/salamisound-1666025-open-screw-jar-screw-cap-can.mp3" type="audio/mp3">
+            <source src="/Guide-of-tags/audio/salamisound-1666025-open-screw-jar-screw-cap-can.ogg" type="audio/ogg">
+        </audio>
+    </body>
+</htm>

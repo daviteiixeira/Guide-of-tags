@@ -1,0 +1,100 @@
+/*The property "." serves for modificar qualquer elemento classificado com uma class*/
+/*The property "#" serves for modificar qualquer elemento classificado com um id*/
+/*Imagine que é indiferente ser . ou #, mas vou usar bastante # porque eu gosto*/
+/*Example do que foi citado:*/
+.contrainer{
+
+}
+#Paragraph {
+
+}
+/*"font-family" serves for mudar the style of letras de seu text*/
+/*The property "background-color" was done for mudar the color do fundo de algo than pode ser do layout da página, fundo de letras...*/
+/*"color" serves for mudar the color of algo, por exemplo se você insert isso em um texto, você muda a cor das letras*/
+/*Este conjunto "display: block; + margin: auto;" é uma das formas para deixar um elemento no meio do site*/
+/*Individualmente a propriedade "display* serves for to control a layout of a element, used very for alterar o valor de
+exibição padrão do HTML que é block inline*/
+/*"margin" was done for to control all the margins of a element*/
+/*The value "block" serves for tratar o elemento como um bloco deixando mais maleável*/
+/*Value "auto" in little words means than the value than I quero é o padrão do HTML*/
+/*The property "text-decoration" is for to give an decoration in your element*/
+/*"text-transform" was done for fazer um texto mudar sua forma natural*/
+/*"font-style" is for dar uma decoração para a fonte das letras e não para as letras em si*/
+/*The property "text-align" was done for escolher aonde leave a text in your page web*/
+/*The property "width" serves for alterar a largura de seu elemento*/
+/*The property "height" serves for alterar a altura de um elemento*/
+/*The value "px" is an abreviação de pixels*/
+/*The property "padding" serves for fazer o elemento ocupar um espaço personalizavel*/
+/*"align-items" is for alterar o lugar de um elemento*/
+/*"display: flex;" usado para definir o comprimento de elementos que são flex*/
+/*The property "position" serves for alterar um elemento que sempre vem com seu valor padrão de estático, para fixed,
+sticky, relative e absolute*/
+/*The property "left" altera a margem de um elemento pegando de referência o lado esquerdo da página*/
+/*The property "right" altera a margem de um elemento pegando de referência o lado direito da página*/
+/*"top" serves for alterar a mergem de um elemento pegando de referência o topo de uma página*/
+/*"transform" is an property than create an transformation 2D or 3D in a element, allows than you gire, escala,
+movimente, incline...*/
+/*The value "translate" serves for you alterar a posiçãõ de um elemento com base coordenadas x e y se for um elemento
+2D, se for 3D você vai precisar de valorx x,y e z*/
+/*The property "z-index" was done for create um eixo de posicionamento de um elemento pra profundidade, foi citado algo
+parecido na propriedade anterior, lembre-se que o eixo x é a referência horizontal e o eixo y é vertical*/
+/*The property "margin-top" serves for alterar a margin de cima de um elemento*/
+/*"background-image" is an property than serves for insert an image to fundo de sua página web e você precisa do valor url e dar a url da imagem
+que quer inserir*/
+/*The property "background-repeat" was done because ás vezes quando colocamos uma imagem de fundo, ela se for pequena por padrão vai se repetir
+para preencher toda a página, então quando colocamos essa propriedade, ela impede isso de acontecer*/
+/*The property "background-position"how the name mesmo say, é para mudar a posição do fundo da página, because ás vezes she fica de um jeito que
+no queremos*/
+
+#Paragraph {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: aliceblue;
+    display: block;
+    margin: auto;
+    text-transform: capitalize;  
+    text-decoration: underline;
+    font-style: italic;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    padding: 0%;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    right: 82%;
+    top: 0px;
+    transform: translate(-50%);
+    z-index: 3;
+    margin-top: 10px;
+    background-image: url(../gif/baixados.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*Vou botar um elemento class para não ficar muito grande a legenda de explicação e dificultar a leitura*/
+/*The property "border-radius" serves for fazer as bordas of your element stay arredondadas*/
+/*The property "border-color" serves for mudar the color da borde de um elemento*/
+/*"border-style" was done for dar um estilo diferente para a borda de um elemento, como duplicar ela*/
+/*"border-width" aumenta o tamanaho da borda de um elemento*/
+/*The property "border" she is a conjunto de outras três propriedades sendo elas: border-width, border-style
+e border-color*/
+/*"font-size" is an property changes the size of font of a text*/
+/*"display: grid" is an property display with a value grid, esse conjunto serve para create a system baseado
+em grades, para facilitar o design do layout*/
+/*"grid-template-rows" is an property than was done for especificar o números de linhas (e as alturas delas) em
+um layout de grade*/
+/*"cursor" is an property than serves for mudar o cursor quando ele tocar no elemento que foi add essa propriedade*/
+
+.contrainer {
+    border-radius: 15px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border: none;
+    font-size: xx-large;
+    display: grid;
+    grid-template-rows: minmax(150px, auto) repeat(5, 100px);
+    cursor: pointer;
+}
